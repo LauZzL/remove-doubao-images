@@ -33,7 +33,6 @@
     JSON.parse = function(data) {
         let jsonData = _parse(data);
         if (!data.match('creations')) return jsonData;
-        console.log(jsonData);
         let creations = findAllKeysInJson(jsonData, 'creations');
         if (creations.length > 0) {
             creations.forEach((creaetion) => {
