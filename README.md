@@ -44,7 +44,7 @@ JSON.parse((jsondata).event_data)
 
 可以看到图片数据是在content中的creations中，我们继续使用JSON.parse查看content结构。
 
-```
+```javascript
 // jsondata为复制的JSON数据
 JSON.parse(JSON.parse((jsondata).event_data).message.content)
 ```
@@ -73,7 +73,7 @@ JSON.parse = function(data) {
 
 在获取历史对话记录时，会包含多个对话ID，如果有多个生成图片记录时会有多个 `creations` ，所以需要获取到所有的 `creations`。
 
-```
+```javascript
 function findAllKeysInJson(obj, key) {
 	const results = [];
 	function search(current) {
@@ -94,7 +94,7 @@ function findAllKeysInJson(obj, key) {
 
 接下来我们只需要在重写的JSON.parse中修改 `creations` 中图片URL即可。
 
-```
+```javascript
 JSON.parse = function(data) {
 	let jsonData = _parse(data);
 	if (!data.match('creations')) return jsonData;
