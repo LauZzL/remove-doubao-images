@@ -1,5 +1,15 @@
 ![remove-doubao-images](https://socialify.git.ci/LauZzL/remove-doubao-images/image?forks=1&language=1&name=1&owner=1&stargazers=1&theme=Dark)
 
+## 全新UI版本
+
+我们已经发布了最新的UI版本，支持批量下载、选中下载、增量下载、无水印预览等。
+
+支持以浏览器扩展、油猴脚本形式运行，本仓库除特殊情况外不再进行更新。
+
+请访问：[https://github.com/LauZzL/doubao-downloader](https://github.com/LauZzL/doubao-downloader)
+
+![KOLd7Hv.gif](https://iili.io/KOLd7Hv.gif)
+
 ## 前言
 
 > 本文教程和脚本仅支持网页版豆包，其他客户端豆包可以通过一些抓包工具替换响应实现。
