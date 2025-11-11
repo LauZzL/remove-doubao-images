@@ -110,8 +110,8 @@ JSON.parse = function(data) {
 	if (!data.match('creations')) return jsonData;
 	let creations = findAllKeysInJson(jsonData, 'creations');
 	if (creations.length > 0) {
-		creations.forEach((creaetion) = >{
-			creaetion.map((item) = >{
+		creations.forEach((creaetion) => {
+			creaetion.map((item) => {
 				const rawUrl = item.image.image_ori_raw.url;
 				item.image.image_ori.url = rawUrl;
 				//预览时也去水印
